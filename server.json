@@ -8,12 +8,12 @@
         "url": "https://github.com/cognitivemyriad/mcp-verified-repo-memory",
         "source": "github"
     },
-    "version": "0.1.3",
+    "version": "0.1.4",
     "packages": [
         {
             "registryType": "npm",
             "identifier": "@cognitivemyriad/vrm-local",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "transport": {
                 "type": "stdio"
             },

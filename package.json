@@ -1,6 +1,6 @@
 {
   "name": "@cognitivemyriad/vrm-local",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Stale-proof repository memory with citations + just-in-time verification + TTL (repo-scoped).",
   "type": "module",
   "bin": {
