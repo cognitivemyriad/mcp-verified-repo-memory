@@ -1,0 +1,27 @@
+# Local configs (often contain absolute paths)
+.mcp.json
+.claude/
+.claude.json
+claude_desktop_config.json
+claude-desktop-config.json
+.mcpregistry_github_token
+.mcpregistry_registry_token
+
+# Verified Repo Memory local DB
+.verified-repo-memory/
+*.json.tmp
+*.json.bak
+
+# Node
+node_modules/
+build/
+*.log
+
+# Env
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,36 @@
+{
+  "name": "@cognitivemyriad/vrm-local",
+  "version": "0.1.2",
+  "description": "Stale-proof repository memory with citations + just-in-time verification + TTL (repo-scoped).",
+  "type": "module",
+  "bin": {
+    "vrm-local": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "tsc -w"
+  },
+  "mcpName": "io.github.cognitivemyriad/verified-repo-memory",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "license": "MIT"
+}

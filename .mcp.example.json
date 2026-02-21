@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "verified-repo-memory": {
+            "command": "node",
+            "args": [
+                "/absolute/path/to/repo/build/index.js",
+                "--repo",
+                "/absolute/path/to/repo"
+            ]
+        }
+    }
+}
