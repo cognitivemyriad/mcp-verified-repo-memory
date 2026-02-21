@@ -1,10 +1,10 @@
 {
   "name": "@cognitivemyriad/vrm-local",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Stale-proof repository memory with citations + just-in-time verification + TTL (repo-scoped).",
   "type": "module",
   "bin": {
-    "vrm-local": "./build/index.js"
+    "vrm-local": "build/index.js"
   },
   "files": [
     "build",
@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepack": "npm run build",
+    "prepublishOnly": "npm run build && npm run check:secrets",
+    "check:secrets": "! grep -rE 'kurosaki|crl\\.co\\.jp|/Users/kuro' build/ README.md LICENSE server.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "dev": "tsc -w"
